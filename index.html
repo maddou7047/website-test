@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
+    <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Over Mij</title>
 </head>
 <body>
+<header class="hero">
+    <nav class="navbar">
+        <div class="logo">Mijn Portfolio</div>
+        <script>
+            let titleElement = document.getElementById("mijn portfolio");
+            let blinking = true;
 
+            function startBlinking() {
+                if (!blinking) {
+                    titleElement.classList.add("blinking-active");
+                    blinking = true;
+                }
+            }
+
+            function stopBlinking() {
+                titleElement.classList.remove("blinking-title");
+                blinking = false;
+            }
+        </script>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over mij.html">Over Mij</a></li>
+            <li><a href="project.html">Projecten</a></li>
+            <li><a href="interview.html">Interview</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>Hallo, Ik ben Marouane Tallagui</h1>
+        <p>Een gepassioneerde webontwikkelaar en creatieveling.</p>
+    </div>
+    <img src="images/foto.jpg" alt="" width="ronde foto">
+</header>
 </body>
 </html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronde Foto</title>
+    <style>
+        img {
+            width: 500px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #000;
+        }
+
+        img {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<img src="jouw-afbeelding.jpg" alt="Ronde afbeelding">
+</body>
+</html>
+
